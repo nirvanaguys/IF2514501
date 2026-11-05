@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Pribadi</title>
+    <!-- Tailwind CSS melalui CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Font Awesome CDN for social media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+        @custom-variant dark (&:where(.dark, .dark *));
+    </style>
+</head>
+
+<body class="bg-white text-gray-950 transition-colors duration-300 dark:bg-gray-950 dark:text-gray-100">
+    <div class="mx-auto w-full max-w-6xl px-4">
+        <!-- Tombol untuk mengubah tema -->
+        <div class="mt-3 text-right">
+            <button id="themeToggleBtn" type="button" aria-pressed="false"
+                class="cursor-pointer rounded-md bg-gray-600 px-4 py-2 text-white hover:bg-gray-700 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-blue-500 dark:bg-gray-700 dark:hover:bg-gray-600">Ubah
+                ke Tema Gelap</button>
+        </div>
+
+        <div class="mt-4 rounded-md bg-gray-100 p-6 sm:p-12 dark:bg-gray-800">
+            <h1 class="mb-2 text-3xl font-medium sm:text-4xl">Profil Saya</h1>
+            <p>Profil dari Wisnu Wardhana, mari mengenal saya!</p>
+        </div>
+
+        <nav class="bg-gray-900 px-4 py-3 text-white dark:bg-gray-800">
+            <div class="w-full">
+                <ul class="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:gap-6">
+                    <li class="">
+                        <a class="font-medium text-white hover:underline" href="#">Beranda</a>
+                    </li>
+                    <li class="">
+                        <a class="text-gray-300 hover:text-white hover:underline" href="#">Riwayat Pendidikan</a>
+                    </li>
+                    <li class="">
+                        <a class="text-gray-300 hover:text-white hover:underline" href="#">Pengalaman</a>
+                    </li>
+                    <li class="">
+                        <a class="text-gray-300 hover:text-white hover:underline" href="#">Kontak</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="grid grid-cols-1 gap-5 p-2.5 sm:grid-cols-12">
+            <div class="min-w-0 sm:col-span-8">
+                <h1 class="mb-2 text-3xl font-medium sm:text-4xl">Tentang Saya</h1>
+                <h5 class="mb-3 text-xl font-medium">Biodata Singkat</h5>
+                <div class="grid grid-cols-1 gap-5 p-2.5 sm:grid-cols-12">
+                    <div id="profilePhotoColumn" class="min-w-0 sm:col-span-4">
+                        <img id="profilePic"
+                            src="D:\Collage Life\Semester 5\DesWeb\Praktikum\2\WhatsApp Image 2026-09-10 at 08.35.13.jpeg"
+                            class="h-auto w-[200px] max-w-full cursor-pointer rounded border border-gray-300 bg-white p-1 transition-[width] duration-500 dark:border-gray-600 dark:bg-gray-800"
+                            alt="Foto Diri" role="button" tabindex="0" aria-label="Perbesar foto profil"
+                            aria-expanded="false">
+                    </div>
+                    <dl class="grid min-w-0 grid-cols-[auto_minmax(0,1fr)] gap-x-4 gap-y-4 self-start sm:col-span-8">
+                        <dt>Nama :</dt>
+                        <dd>Muhammad wisnu</dd>
+                        <dt>TTL :</dt>
+                        <dd>Balikpapan, 16 September 2007</dd>
+                        <dt>Alamat :</dt>
+                        <dd>Karang joang </dd>
+                        <dt>Agama :</dt>
+                        <dd>Islam</dd>
+                        <dt>Pekerjaan :</dt>
+                        <dd>Mahasigma Informatika ITK</dd>
+                    </dl>
+                </div>
+
+                <h5 class="mb-3 text-xl font-medium">Skill:</h5>
+                <p>Python Programming</p>
+                <div class="mb-4 h-4 overflow-hidden rounded bg-gray-200 dark:bg-gray-700">
+                    <div class="h-full bg-blue-600 text-center text-xs leading-4 text-white transition-[width] duration-700 ease-out"
+                        data-skill-width="85" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="90" style="width:0%">85</div>
+                </div>
+                <p>Machine Learning</p>
+                <div class="mb-4 h-4 overflow-hidden rounded bg-gray-200 dark:bg-gray-700">
+                    <div class="h-full bg-blue-600 text-center text-xs leading-4 text-white transition-[width] duration-700 ease-out"
+                        data-skill-width="60" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="95" style="width:0%">60</div>
+                </div>
+                <p>Deep Learning</p>
+                <div class="mb-4 h-4 overflow-hidden rounded bg-gray-200 dark:bg-gray-700">
+                    <div class="h-full bg-blue-600 text-center text-xs leading-4 text-white transition-[width] duration-700 ease-out"
+                        data-skill-width="45" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="95" style="width:0%">45</div>
+                </div>
+                <p>Image Processing</p>
+                <div class="mb-4 h-4 overflow-hidden rounded bg-gray-200 dark:bg-gray-700">
+                    <div class="h-full bg-blue-600 text-center text-xs leading-4 text-white transition-[width] duration-700 ease-out"
+                        data-skill-width="25" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="95" style="width:0%">25</div>
+                </div>
+                <p>Data Visualization</p>
+                <div class="mb-4 h-4 overflow-hidden rounded bg-gray-200 dark:bg-gray-700">
+                    <div class="h-full bg-blue-600 text-center text-xs leading-4 text-white transition-[width] duration-700 ease-out"
+                        data-skill-width="70" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="80" style="width:0%">70</div>
+                </div>
+                <p>SQL</p>
+                <div class="mb-4 h-4 overflow-hidden rounded bg-gray-200 dark:bg-gray-700">
+                    <div class="h-full bg-blue-600 text-center text-xs leading-4 text-white transition-[width] duration-700 ease-out"
+                        data-skill-width="80" role="progressbar" aria-valuemin="0" aria-valuemax="100"
+                        aria-valuenow="75" style="width:0%">80</div>
+                </div>
+            </div>
+            <div class="min-w-0 sm:col-span-4">
+                <h1 class="mb-2 text-3xl font-medium sm:text-4xl">Pengalaman</h1>
+                <h5 class="mb-3 text-xl font-medium">Aktivitas Saya</h5>
+                <ul class="divide-y divide-gray-200 dark:divide-gray-700">
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800">Staff CMD infinite vol 4</li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800">Staff ahli CMD Infinite vol 5 </li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800">Staff BMI HMIF Kabinet Impact</li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800">Staff Ahli Riset and Technolgi HMIF ITK Kabinet
+                        Source</li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800">Staff PRD IEEE ITK 2024-2025
+                    </li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800">Mhasigma HMIF ITK 2024-sekarang</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="grid grid-cols-1 gap-5 bg-gray-200 p-2.5 sm:grid-cols-12 dark:bg-gray-800">
+            <div class="min-w-0 text-center sm:col-span-6">
+                <h3 class="mb-3 text-2xl font-medium">Tempat tinggal</h3>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1627.1144897520821!2d117.5411986783474!3d0.5096957183759923!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x320a356504702be7%3A0xb5ffae3b7b5a5b6b!2sGG5R%2BX57%2C%20Sangatta%20Utara%2C%20Kec.%20Sangatta%20Utara%2C%20Kabupaten%20Kutai%20Timur%2C%20Kalimantan%20Timur%2075683!5e0!3m2!1sid!2sid!4v1791421952805!5m2!1sid!2sid"
+                    width="350" height="255" style="border:2;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="strict-origin-when-cross-origin"></iframe>
+            </div>
+            <div class="min-w-0 text-center sm:col-span-6">
+                <h3 class="mb-3 text-2xl font-medium">Kontak</h3>
+                <ul
+                    class="overflow-hidden rounded-md border border-gray-300 divide-y divide-gray-200 dark:border-gray-600 dark:divide-gray-700">
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800"><a
+                            href="https://www.linkedin.com/in/m-wisnu-36aa9223b/" target="_blank"
+                            rel="noopener noreferrer" data-social-link
+                            class="text-blue-600 hover:underline dark:text-blue-400"><i class="fab fa-linkedin"></i>
+                            LinkedIn</a></li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800"><a href="https://www.instagram.com/?hl=id"
+                            target="_blank" rel="noopener noreferrer" data-social-link
+                            class="text-blue-600 hover:underline dark:text-blue-400"><i class="fab fa-instagram"></i>
+                            Instagram</a></li>
+                    <li class="bg-white px-4 py-3 dark:bg-gray-800"><a href="https://github.com/nirvanaguys"
+                            target="_blank" rel="noopener noreferrer" data-social-link
+                            class="text-blue-600 hover:underline dark:text-blue-400"><i class="fab fa-github"></i>
+                            GitHub</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="bg-gray-500 p-2.5 text-center text-white dark:bg-gray-900">
+            <div class="w-full">
+                Copyright @2026 Muhammad Wisnu Wardhana
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript: interaksi DOM -->
+    <script>
+        // Tema Tailwind dikendalikan oleh class dark pada elemen html.
+        // SOAL 1: pilih elemen tombol dengan id themeToggleBtn untuk manipulasi DOM
+        const themeToggleBtn = document.getElementById('themeToggleBtn');
+        // SOAL 2: lengkapi sebelum tanda { untuk menangani klik pada themeToggleBtn
+        themeToggleBtn.addEventListener('click', function () {
+            const isDark = document.documentElement.classList.toggle('dark');
+            themeToggleBtn.textContent = isDark ? 'Ubah ke Tema Terang' : 'Ubah ke Tema Gelap';
+            themeToggleBtn.setAttribute('aria-pressed', String(isDark));
+        });
+
+        // Ukuran foto bergantian antara 200px dan 400px.
+        // SOAL 3: pilih elemen foto dengan id profilePic untuk manipulasi DOM
+        const profilePic = document.getElementById('profilePic');
+        const profilePhotoColumn = document.getElementById('profilePhotoColumn');
+        let isEnlarged = false;
+        function toggleProfilePic() {
+            isEnlarged = !isEnlarged;
+            profilePic.style.width = isEnlarged ? '400px' : '200px';
+            profilePhotoColumn.classList.toggle('sm:col-span-12', isEnlarged);
+            profilePhotoColumn.classList.toggle('sm:col-span-4', !isEnlarged);
+            profilePic.setAttribute('aria-expanded', String(isEnlarged));
+            profilePic.setAttribute('aria-label', isEnlarged ? 'Perkecil foto profil' : 'Perbesar foto profil');
+        }
+        // SOAL 4: lengkapi sebelum tanda { untuk menangani klik pada profilePic
+        profilePic.addEventListener('click', function () {
+            toggleProfilePic();
+        });
+        profilePic.addEventListener('keydown', function (event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                event.preventDefault();
+                toggleProfilePic();
+            }
+        });
+
+        // Animasi progress skill menggunakan transition Tailwind.
+        window.addEventListener('load', function () {
+            // SOAL 5: buat variabel untuk manipulasi DOM dari seluruh element html yang memiliki atribut data-skill-width
+            const skillElements = document.querySelectorAll('[data-skill-width]');
+            skillElements.forEach(function (skill) {
+                setTimeout(function () {
+                    skill.style.width = skill.dataset.skillWidth + '%';
+                }, 500);
+            });
+        });
+
+        // Notifikasi sebelum membuka tautan media sosial.
+        // SOAL 6: pilih seluruh elemen tautan yang memiliki atribut data-social-link
+        const socialLinks = document.querySelectorAll('[data-social-link]');
+        socialLinks.forEach(function (link) {
+            // SOAL 7: lengkapi sebelum tanda { untuk menangani klik pada link
+            link.addEventListener('click', function () {
+                // SOAL 8: tampilkan alert pemberitahuan berpindah ke website lain beserta URL dari link.href
+                alert('Anda akan berpindah ke website: ' + link.href);
+            });
+        });
+    </script>
+</body>
+
+</html>
