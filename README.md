@@ -4,19 +4,23 @@ Repositori ini berisi kumpulan tugas dan latihan praktikum untuk mata kuliah Des
 
 ## Struktur Direktori
 
-- **1/**
+- **1**
   - Implementasi dasar struktur halaman web menggunakan HTML dan CSS murni.
   - Berisi file `main.html` dan `style.css`.
 
-- **2/**
+- **2**
   - Latihan desain web modern dan interaktivitas halaman.
   - Menggunakan Tailwind CSS untuk styling utilitas dan JavaScript dasar.
   - Berisi file `Soal Praktikum Tailwind  Javascript.html`.
 
-- **3/**
+- **3**
   - Latihan manipulasi DOM dan efek interaktif pada antarmuka web.
   - Menggunakan library jQuery.
   - Berisi file `Soal Praktikum jQuery.html`.
+- **4**
+  -d
+  -f
+  -
 
 ## Cara Menjalankan
 
